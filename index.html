@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Literata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="">
+    <title>Title</title>
+    <style>
+        h1 {
+            text-align: center;
+            background-color: dodgerblue;
+            padding: 40px;
+            font-family: cursive;
+        }
+        
+        #start {
+            font-family: cursive;
+            font-size: 25px;
+            font-weight: bolder;
+            word-break: break-all;
+            text-align: center;
+            cursor: pointer;
+            color: black;
+            padding: 20px;
+            width: 300px;
+            border-radius: 20px;
+            background-color: dodgerblue;
+            margin-top: 5%;
+        }
+        
+        #quizTime {
+            font-size: 20px;
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Wel-come to Code-Quiz!</h1>
+            </div>
+        </div>
+        <nav class="row">
+            <div class="col-11">
+                <a href="./score/score.html">Score Board</a>
+            </div>
+
+            <div class="col-1" id="quizTime"></div>
+
+        </nav>
+        <main id="container" class="flex-center flex-column">
+            <button id="start">Start Quiz!</button>
+            <section id="quiz" style="display: none">
+                <div id="question"></div>
+
+                <!-- Answer Choices button container-->
+                <div id="choices">
+
+                    <div class="mt-3">
+                        <button id="optionA" class="bg-warning" onclick="checkAnswer('optionA')"></button>
+                    </div>
+                    <div class="mt-3">
+                        <button id="optionB" class="bg-warning" onclick="checkAnswer('optionB')"></button>
+                    </div>
+                    <div class="mt-3">
+                        <button id="optionC" class="bg-warning" onclick="checkAnswer('optionC')"></button>
+                    </div>
+                    <div class="mt-3">
+                        <button id="optionD" class="bg-warning" onclick="checkAnswer('optionD')"></button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="./script/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
